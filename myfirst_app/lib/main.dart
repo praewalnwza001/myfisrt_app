@@ -44,14 +44,14 @@ class MyHomePage extends StatelessWidget {
           // ใช้ Column สำหรับเลย์เอาต์แนวตั้ง
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Image.asset(
-              'asset/images/savema.jpg',
+            Image.network(
+              'http://picsum.photos/seed/flutter/400/200',
               height: 50.0,
               fit: BoxFit.fitHeight,
             ),
             const SizedBox(height: 16.0),
             Image.asset(
-              'asset/images/savema.jpg',
+              'assets/savema.jpg',
               errorBuilder: (context, error, stackTrace) {
                 // แนวปฏิบัติที่ดีแม้สำหรับ assets, เผื่อกรณีพาธผิด
                 return const Text(
